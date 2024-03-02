@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio  website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6afefce1fa.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <span> Abhilash. </span>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <p>Full stack developer</p>
+                <h1>Hi, I'm <span>Abhilash</span> <br> from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="pic1.jpg" height="400px" width="500px">
+
+                </div>
+                <div class="col-2">
+                    <h1 class="sub-titles">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ullam quam repellat veniam minus rem, eaque molestias eum magnam qui, doloribus voluptas consequatur tenetur non eligendi dolores ratione ea nisi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quibusdam incidunt earum adipisci veniam cupiditate aliquid! Ex sunt, rerum labore ratione omnis velit accusantium eveniet reiciendis, laudantium deleniti unde dolorem! </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span> <br> Web app Development</li>
+                            <li><span>App Development</span> <br> Building Android apps</li>
+                            <li><span>Data Analysis</span> <br> Data analyst</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2026</span> <br> frontend developer at Amazon</li>
+                            <li><span>2035</span> <br> full stack developer at Netflix</li>
+                            <li><span>2046</span> <br> Chief Executive Officer at Accenture</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>10th</span> <br>St. Xavier high school,CTC,Odisha</li>
+                            <li><span>12th</span> <br>Ravenshaw higher secondary school</li>
+                            <li><span>Graduation</span> <br>ITER,SOA</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus deleniti, nam aut perspiciatis qui consequatur magnam. Nam, voluptatum commodi? .</p>
+                    <a href="#">learn more</a>
+                </div>
+              
+                    <div>
+                        <i class="fab fa-app-store"></i>
+                        <h2>App Development</h2><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus deleniti, nam aut perspiciatis qui consequatur magnam. Nam, voluptatum .</p>
+                        <a href="#">learn more</a>
+                    </div>
+    
+              
+               
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Data Analyst</h2><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus deleniti, nam aut perspiciatis qui consequatur magnam. Nam, voluptatum </p>
+                        <a href="#">learn more</a>
+                    </div>
+    
+                
+
+            </div>
+        </div>
+    </div>
+<!-- portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-titlt">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img1.jpg" alt="">
+                <div class="layer">
+                    <h3>Code-Sheet</h3>
+                    <p>Developed by Abhilash, Code-Sheet is an open-source code editor known for its ease of use, modern interface, and strong community support. It offers features like smart autocompletion, built-in package manager, and deep Git integration</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img2.jpg" alt="">
+                <div class="layer">
+                    <h3>ch*t finder</h3>
+                    <p>Developed by Abhilash, Specifically designed for singles over 50, OurTime helps older adults find companionship, friendship, and romance. It's geared towards individuals seeking meaningful connections later in life</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="img3.jpg" alt="">
+                <div class="layer">
+                    <h3>No-scope Algorithms</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, a quas nemo fuga animi qui sed libero maxime blanditiis magnam totam ut ipsam alias, impedit minima placeat veniam architecto expedita! 
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <script>
+        let tabLinks = document.getElementsByClassName('tab-links');
+        let tabContents = document.getElementsByClassName('tab-contents');
+        function openTab(tabName){
+            for(tablink of tabLinks){
+                tablink.classList.remove('active-link');
+            }
+            for(tabcontents of tabContents){
+                tabcontents.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link')
+            document.getElementById(tabName).classList.add('active-tab')
+        }
+
+    </script>
+    
+</body>
+</html>

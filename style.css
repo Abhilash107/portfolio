@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing:border-box
+}
+
+body{
+    background:#080808;
+    color: aliceblue;
+
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.container{
+    padding: 20px 10%;
+
+
+
+}
+.container nav span{
+    font-weight: 900;
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    transition: ease 0.2s;
+
+
+
+}
+.container nav span:hover{
+    color: #9d9a9a;
+
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 20px;
+
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    position: relative;
+    
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:#f30450;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: ease-in-out 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+.header-text{
+    margin-top:16%;
+    line-height: 2;
+    font-size: 2rem;
+
+}
+
+.header-text h1{
+    font-size: 4.6rem;
+    line-height: 1;
+
+}
+
+.header-text h1 span{
+    color: #f30450;
+    
+}
+
+/* About section */
+
+#about{
+    padding: 80px 0;
+    color: rgb(182, 182, 174);
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.col-1{
+    flex-basis: 35%;
+
+}
+.col-1 img{
+    width: 100%;
+    border-radius: 10px;
+}
+.col-2{
+    flex-basis: 60%;
+
+}
+
+.sub-titles{
+    color: wheat;
+    font-size: 60px;
+    font-weight: 500;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+.tab-links{
+    margin-right:50px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    padding: 2px;
+
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:#f4155b;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    transition: ease 0.5s;
+}
+
+.tab-links:hover::after{
+    width: 100%;
+}
+
+.tab-links.active-link::after{
+    width: 100%;
+    opacity: 0.5;
+}
+.tab-contents ul li{
+    list-style-type: none;
+    margin: 10px 0;
+
+}
+.tab-contents ul li span{
+    color:#cb2840;
+    font-size: 12px;
+
+}
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* Services */
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap:35px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: #201f1f;
+    padding: 45px;
+    font-size: 15px;
+    font-weight: 400;
+    border-right: 10px;
+    transition: background 0.5s, transform 0.5s;
+    border-radius: 15px;
+
+}
+
+.services-list div:hover{
+    background: #ed0b52;
+    transform: translateY(-6px);
+
+}
+
+
+.services-list div i{
+    font-size: 55px;
+    margin-bottom: 33px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+/* portfolio */
+#portfolio{
+    padding: 40px 0;
+
+    
+
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap:35px;
+    margin-top: 50px;
+
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    height: 400px;
+    display: block;
+    border-radius: 10px;
+}
+.layer{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.4), #e62864);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 22px;
+    
+}
+.layer p{
+    margin: 10px 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
