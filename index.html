@@ -15,13 +15,18 @@
                 <span> Abhilash. </span>
 
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                   
+                    <i class="fa-regular fa-circle-xmark"></i>
                     
                 </ul>
+                <i class="fa-solid fa-bars"></i>
+                
             </nav>
 
             <div class="header-text">
@@ -124,7 +129,7 @@
             <div class="work">
                 <img src="img2.jpg" alt="">
                 <div class="layer">
-                    <h3>ch*t finder</h3>
+                    <h3>Partner finder</h3>
                     <p>Developed by Abhilash, Specifically designed for singles over 50, OurTime helps older adults find companionship, friendship, and romance. It's geared towards individuals seeking meaningful connections later in life</p>
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
@@ -133,7 +138,7 @@
             <div class="work">
                 <img src="img3.jpg" alt="">
                 <div class="layer">
-                    <h3>No-scope Algorithms</h3>
+                    <h3>No-scope Algorithm</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, a quas nemo fuga animi qui sed libero maxime blanditiis magnam totam ut ipsam alias, impedit minima placeat veniam architecto expedita! 
                     </p>
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -141,8 +146,44 @@
             </div>
 
         </div>
+        <a href="#" class="btn">See more</a>
     </div>
 </div>
+<!-- Contact section -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>Contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>01020736456</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+
+                </div>
+                <a href="Your Name.docx" download class="btn btn2">Download CV</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="text" name="email" placeholder="Your email" required> 
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea> 
+                    <button type="submit" class="btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+                
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024 Abhilash. <i class="fa-solid fa-heart"></i> by NoBody</p>
+    </div>
+</div> 
 
     <script>
         let tabLinks = document.getElementsByClassName('tab-links');
@@ -159,6 +200,25 @@
         }
 
     </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyAPcxdAIm91bw2uyW6p3ZaJDy1Byw-3sMIjrgaJdzIbBsnYy0TDlWZg9fFmiHnjr0d/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
     
 </body>
 </html>
