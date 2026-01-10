@@ -313,6 +313,17 @@ nav ul li a:hover::after{
     font-size: 22px;
 
 }
+
+#contact .row {
+    justify-content: center;
+}
+
+#contact .contact-left {
+    text-align: center;
+}
+
+
+
 .social-icons{
     margin-top: 30px;
 
@@ -389,6 +400,43 @@ nav .fa-solid, .fa-regular{
 }
 
 /* CSS for small screens */
+
+@media only screen and (max-width: 600px) {
+
+    nav .fa-bars {
+        display: block;
+        font-size: 25px;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        transition: right 0.4s ease;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-circle-xmark {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+}
 @media only screen and (max-width: 600px) {
     #header{
         background-image: url('./imgs/background2.jpg');
@@ -428,10 +476,6 @@ nav .fa-solid, .fa-regular{
         cursor: pointer;
 
     }
-
-
-
-    
 }
 
 #msg{
