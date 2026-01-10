@@ -493,7 +493,7 @@ nav .fa-solid, .fa-regular{
     
   }
 
-  .text{
+.text{
     position: absolute;
     font-family:cursive;
     font-weight: 500;
@@ -504,10 +504,9 @@ nav .fa-solid, .fa-regular{
     animation: typing 1.9s steps(30, end), blink-caret 0.5s step-end infinite alternate;
     margin-top:12%;
     font-size: 3.2rem;
-    color:  rgb(41, 219, 50);
-   
-
-  }  
+    color: #22D3EE;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.6);
+}  
 
 @keyframes typing {
     from {

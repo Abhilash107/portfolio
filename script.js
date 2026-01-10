@@ -38,7 +38,10 @@ if (form) {
 
 
     document.addEventListener('DOMContentLoaded', function () {
-        const texts = ["Hello, I am Abhilash", "A fullstack Developer from India"];
+       const texts = [
+    "Hello, I am Abhilash",
+    "A Full-Stack Developer from India"
+];
         let textIndex = 0;
         let charIndex = 0;
       
@@ -53,9 +56,46 @@ if (form) {
             textIndex = (textIndex + 1) % texts.length;
           }
       
-          setTimeout(type, 160);
+          setTimeout(type, 130);
         }
       
         type();
       });
       
+document.addEventListener('DOMContentLoaded', () => {
+    const lines = [
+        "Hello, I am Abhilash",
+        "A Full-Stack Developer from India"
+    ];
+
+    const textEl = document.querySelector('.text');
+
+    let lineIndex = 0;
+    let charIndex = 0;
+
+    function type() {
+        if (lineIndex >= lines.length) return;
+
+        const currentLine = lines[lineIndex];
+
+        if (charIndex <= currentLine.length) {
+            if (charIndex === 0 && lineIndex > 0) {
+                textEl.innerHTML += "<br>";
+            }
+
+            textEl.innerHTML =
+                textEl.innerHTML.replace(/<br>.*$/, '') +
+                currentLine.slice(0, charIndex);
+
+            charIndex++;
+            setTimeout(type, 120);
+        } else {
+            lineIndex++;
+            charIndex = 0;
+            setTimeout(type, 400);
+        }
+    }
+
+    type();
+});
+
