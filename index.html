@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/6afefce1fa.js"
       crossorigin="anonymous"
     ></script>
+
   </head>
   <body>
     <div id="header">
@@ -33,6 +34,8 @@
         </div>
       </div>
     </div>
+
+
     <!-- About section -->
     <div id="about">
       <div class="container">
@@ -42,7 +45,7 @@
           </div>
           <div class="col-2">
             <h1 class="sub-titles">About Me</h1>
-            <p style="font-size: 1.1rem;font-weight: bold;color: rgb(228, 253, 253);">
+            <p style="font-size: 1.1rem;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  color: rgb(228, 253, 253);">
               I am Abhilash Mishra, a final-year B.Tech Computer Science student
               at Siksha ‘O’ Anusandhan, with a strong foundation in backend
               engineering and scalable system design. I specialize in building
@@ -164,6 +167,7 @@
       </div>
     </div>
 
+
     <!-- services -->
     <div id="services">
       <!-- <div class="container">
@@ -280,6 +284,7 @@
       </div>
     </div>
 
+
     <!-- portfolio -->
     <!-- <div id="portfolio">
     <div class="container">
@@ -317,13 +322,14 @@
     </div>
 </div> -->
 
+
     <!-- Contact section -->
     <div id="contact">
       <div class="container">
         <div class="row">
           <div class="contact-left">
             <h1 class="sub-titles">Contact me</h1>
-            <p style="color: azure;">
+            <p>
               <i class="fa-regular fa-paper-plane"></i
               >abhilash00003108884@gmail.com
             </p>
@@ -373,7 +379,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
 
-<script>
+<!-- <script>
 VANTA.TOPOLOGY({
   el: "body",
   mouseControls: true,
@@ -384,10 +390,33 @@ VANTA.TOPOLOGY({
   scale: 1.0,
   scaleMobile: 1.0,
   color: 0x591bb3,
-  backgroundColor: 0x000000
+  backgroundColor: 0x000000,
+  points: 15.0
 });
 
-</script>
+</script> -->
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js" defer></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  VANTA.TOPOLOGY({
+    el: "body",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.0,
+    minWidth: 200.0,
+    scale: 1.0,
+    scaleMobile: 1.0,
+    color: 0x591bb3,
+    backgroundColor: 0x000000,
+    points: 13.0,
+    spacing: 16.0
+  });
+});
+</script>
   </body>
 </html>

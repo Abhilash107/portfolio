@@ -11,6 +11,7 @@ html{
 body{
     background:#080808;
     color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 #header{
@@ -110,9 +111,13 @@ nav ul li a:hover::after{
 }
 
 .sub-titles{
-    color: rgb(246, 56, 84);
+    /* color: rgb(246, 56, 84);*/
+    color: #d0a0ff; 
+    /* color: #9333EA; */
+    /* color: #A78BFA; */
     font-size: 50px;
     font-weight: 600;
+    letter-spacing: 1px;
 }
 .tab-titles{
     display: flex;
@@ -126,7 +131,9 @@ nav ul li a:hover::after{
     position: relative;
     padding: 2px;
     font-size: 1rem;
-    color: rgb(246, 56, 84);
+    /* color: rgb(246, 56, 84); */
+    color: #d0a0ff; 
+
 
 }
 .tab-links::after{
@@ -153,12 +160,14 @@ nav ul li a:hover::after{
     list-style-type: none;
     margin: 10px 0;
     font-size: 1.1rem;
-    font-weight: 600;
+    
 
 }
 .tab-contents ul li span{
-    color:#fc4964;
-    font-size: 14px;
+    /* color:#fc4964; */
+    color: #d0a0ff; 
+    font-weight: 800;
+    font-size: 15px;
 
 }
 .tab-contents{
@@ -169,7 +178,7 @@ nav ul li a:hover::after{
     display: block;
 }
 
-#skills{
+#skills, #experience, #education{
     color: rgb(228, 253, 253);
 }
 
@@ -326,7 +335,7 @@ nav ul li a:hover::after{
    
 }
 .contact-left p i{
-    color:#ff0051;
+    color: #d0a0ff;
     margin-right: 15px;
     font-size: 22px;
 
@@ -350,12 +359,12 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size:  1.3rem;
     margin-right: 18px;
-    color: #ededed;
+    color: #d0a0ff;
     display: inline-block;
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: rgb(246, 56, 84);
+    color: #d0a0ff;
     transform: translateY(-3px) scale(1.08);
     z-index: 1;
     box-shadow: 0 15px 30px rgba(0,0,0,0.35);
@@ -375,8 +384,10 @@ nav ul li a:hover::after{
     
 }
 .btn2:hover{
-    background: #df235f;
+    background: #d0a0ff;
+    color: whitesmoke;
     transform: scale(1.04);
+    font-size:1rem;
     border:1px solid #b4b0b0;
 }
 
@@ -516,16 +527,22 @@ nav .fa-solid, .fa-regular{
 
 .text{
     position: absolute;
-    font-family:cursive;
+    font-family:'JetBrains Mono', monospace;
     font-weight: 500;
     border-right: 1px solid #000;
     word-spacing: 3px;
     overflow: hidden;
     margin: 0 auto;
-    animation: typing 1.9s steps(30, end), blink-caret 0.5s step-end infinite alternate;
+    animation: typing 1.5s steps(30, end), blink-caret 0.5s step-end infinite alternate;
     margin-top:12%;
-    font-size: 3.2rem;
-    color: #22D3EE;
+    font-size: 3.4rem;
+    /* color: #22D3EE; */
+    /* color: #D8B4FE; */
+    
+    /* color: #A78BFA; */
+    color: #e1e8f4; 
+
+
     text-shadow: 0 2px 12px rgba(0,0,0,0.6);
 }  
 
